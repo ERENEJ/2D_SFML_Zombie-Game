@@ -59,10 +59,10 @@ int main()
 
     //Bullet bullets[100];
     int currentBullet = 0;
-    int bulletsSpare = 24;
-    int bulletsInClip = 6;
-    int clipSize = 6;
-    float fireRate = 1;
+    int bulletsSpare = 60;
+    int bulletsInClip = 12;
+    int clipSize = 12;
+    float fireRate = 3;
 
     //time of last firing event
     Time lastPressed;
@@ -250,10 +250,10 @@ int main()
                     score = 0;
 
                     currentBullet = 0;
-                    bulletsSpare = 24;
-                    bulletsInClip = 6;
-                    clipSize = 6;
-                    fireRate = 1;
+                    bulletsSpare = 60;
+                    bulletsInClip = 12;
+                    clipSize = 12;
+                    fireRate = 3;
 
                     player.resetPlayerStats();
 
@@ -406,7 +406,7 @@ int main()
                healthPickup.setArena(arena);
                ammoPickup.setArena(arena);
 
-               numZombies = 5 * wave;
+               numZombies = 10 * wave;
 
                //deleting previously allocated zombie array
                delete[] zombieArray;

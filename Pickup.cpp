@@ -89,6 +89,7 @@ void Pickup::update(float elapsedTime)
 	if (m_SecondsSinceDeSpawn > m_SecondsToWait && !m_Spawned)
 	{
 		spawn();
+		spawn();
 	}
 }
 
